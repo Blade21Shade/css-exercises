@@ -10,7 +10,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr; /* 0.75 1 1 1 */
   grid-template-rows: minmax(50px, 100px) 
                       minmax(20px, 50px)
-                      minmax(200px, 850px)
+                      minmax(200px, 810px)
                       minmax(20px, 50px);
   gap: 5px;
 }
@@ -110,13 +110,14 @@
 
 .article {
   background-color: #bccbde;
+  overflow: auto;
 
   grid-column: 2 / -1;
   grid-row: 3 / -2;
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
   gap: 15px;
 }
 
